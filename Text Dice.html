@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JavaScript DEMO!! </title>
+</head>
+
+
+
+<body>
+
+    <p id="para"></p>
+
+    <form>
+        <button type="button" onclick="randomnum()"> Roll Dice</button>
+    </form>
+
+
+<script>
+    function randomnum(){
+        let array = ['one','two', 'three', 'four', 'five', 'six'];
+        let x = Math.floor((Math.random()* 6) +1);
+        let indx = x - 1;
+        let str = array[indx];
+        let placetoput = document.getElementById('para');
+        placetoput.innerHTML='You rolled a '+str
+    }
+</script>
+
+
+</body>
+</html>

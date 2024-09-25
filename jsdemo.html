@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JavaScript DEMO!! </title>
+</head>
+
+
+
+<body>
+
+    <HI id="Testparagraph"></HI>
+
+    <form>
+    <input id="num1" type="number">
+    <br>
+    <button type="button" onclick="demofunction()"> click me!</button>
+    </form>
+
+
+<script>
+    placetoput=document.getElementById("Testparagraph");
+    placetoput.innerHTML="Hello";
+    function demofunction(){
+        var x = document.getElementById("num1").value;
+        y=x*x;
+        alert(y);
+        placetoput.innerHTML=y;
+    }
+</script>
+
+
+</body>
+</html>

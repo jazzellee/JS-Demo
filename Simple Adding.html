@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Addition</title>
+</head>
+
+
+<body>
+    <p id='para'></p>
+    <form>
+        <input id='num1' type='number'>
+        <br>
+        <input id='num2' type='number'>
+        <br>
+        <button type='button' onclick='add()'>calculate</button>
+    </form>
+
+<script>
+    placetoput=document.getElementById('para');
+    placetoput.innerHTML = 'Addition of Two Numbers: ';
+    function add() {
+        let x = Number(document.getElementById('num1').value)
+        let y = Number(document.getElementById('num2').value)
+        z = x + y
+        alert(z);
+        placetoput.innerHTML = z;
+
+    }
+
+</script>
+</body>
+</html>
